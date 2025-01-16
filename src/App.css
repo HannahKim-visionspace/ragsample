@@ -1,0 +1,106 @@
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.chat-container {
+  width: 400px;
+  max-width: 100%;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.messages {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  max-height: 300px;
+  border-bottom: 1px solid #ddd;
+}
+
+.message {
+  display: flex; /* 메시지와 이미지를 가로로 정렬 */
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.user {
+  justify-content: flex-end; /* 사용자 메시지 오른쪽 정렬 */
+}
+
+.ai {
+  justify-content: flex-start; /* AI 메시지 왼쪽 정렬 */
+}
+
+.sender {
+  margin-right: 10px;
+}
+
+.avatar-image {
+  width: 30px; /* 아바타 이미지 너비 */
+  height: 30px; /* 아바타 이미지 높이 */
+  border-radius: 50%; /* 원형 이미지 */
+}
+
+.text {
+  flex: 1;
+  padding: 10px;
+  background-color: #e6e6e6;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.user .text {
+  background-color: #007bff;
+  color: white;
+}
+
+.ai .text {
+  background-color: #e6e6e6;
+  color: black;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-top: 1px solid #ddd;
+  background-color: #f5f5f5;
+}
+
+.input-field {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+}
+
+.send-button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  background-color: #ffd700;
+  border: 1px solid black;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+  background-color: #ffc107;
+}
+
+.send-button:active {
+  background-color: #ffb300;
+}
